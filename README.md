@@ -2,7 +2,6 @@
 Files for the IBM AI Enterprise Workflow Capstone project. 
 
 ## API
---------------
   
 The API contains four tabs:
 1. The **Home** tab is used to show how to use the API.
@@ -11,7 +10,6 @@ The API contains four tabs:
 4. The **Logs** tab is used to display the content of the train and predict logs.
 
 ## Usage
---------------
   
 To test app.py
 --------------
