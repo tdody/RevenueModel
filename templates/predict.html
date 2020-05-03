@@ -1,0 +1,30 @@
+<!-- extends from base layout -->
+
+{% extends "base.html" %} {% block content %}
+<br>
+<p>
+    <h3>Predict</h3>
+</p>
+<h4>Select Country & Date to get the predicted revenue</h4>
+
+<form action="{{ url_for('predict')}}" method="post">
+    Select Country:<br>
+    <input type="text" name="country" placeholder="Country" required="required" />{{country_error}}<br>
+    <br> Select Date:<br>
+    <input type="text" name="date" placeholder="Date" required="required" />{{date_error}}
+    <br><br>
+    <button type="submit" class="btn btn-primary" onclick="$('#loading').show();$('#result').hide()">Predict</button>
+</form>
+
+<br>
+<div id="loading" style="display:none;"><img src="{{ url_for('static', filename='loading.gif') }}" alt="" /> Making prediction...</div>
+
+
+<div id="result" style="display:inline;"><br> {% for para in prediction_text %} {{para}}
+    <br> {% endfor %}</div>
+
+
+</body>
+
+</html>
+{% endblock %}

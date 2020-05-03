@@ -1,0 +1,5 @@
+unique_id,timestamp,tag,start_date,end_date,x_shape,eval_test,model_version,model_version_note,runtime
+441b1a88-15b6-4b04-9616-3da184aebd8f,1588524087.6277068,all,2017-11-30,2019-06-29,"(100, 100)",{'rmse': 0.5},0.1,logger test model,99:99:99
+273012ca-6b18-419c-892d-85a727f74251,1588524102.296111,united_kingdom,2017-12-02,2019-06-26,"(174, 13)",{'rmse': 23938.0},0.1,supervised learing model for time-series,000:00:14
+08fc3cb6-b349-49d4-a434-eb8c52620d39,1588524114.60071,all,2017-12-05,2019-06-22,"(174, 13)",{'rmse': 25707.0},0.1,supervised learing model for time-series,000:00:12
+0c888869-1097-44cc-8914-7385af2d30f0,1588530628.547065,france,2017-11-29,2019-06-30,"(579, 13)",{'rmse': 228.0},0.1,supervised learing model for time-series,000:00:16

@@ -1,0 +1,25 @@
+<!-- extends from base layout -->
+
+{% extends "base.html" %} {% block content %}
+<br>
+<p>
+    <h3>Train</h3>
+</p>
+
+Select the country for which you wish to re-train the model
+
+<br>
+<form action="{{ url_for('train')}}" method="post">
+    <input type="text" name="country" placeholder="Country" required="required" />{{country_error}}<br><br>
+    <button type="submit" class="btn btn-primary" onclick="$('#loading').show();$('#result').hide()">Train</button>
+</form>
+
+<br>
+<div id="loading" style="display:none;"><img src="{{ url_for('static', filename='loading.gif') }}" alt="" /> Training in progress...</div>
+
+<div id="result" style="display:inline;">{{completion_message}}</div>
+
+</body>
+
+</html>
+{% endblock %}

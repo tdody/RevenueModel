@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<br>
+<p>
+    <h3>Logs</h3>
+</p>
+
+<p>
+    <h5>Training</h5>
+    {% for table in table_train %} {{ table|safe }} {% endfor %}
+</p>
+<br>
+<p>
+    <h3>Predictions</h3>
+    {% for table in table_predict %} {{ table|safe }} {% endfor %}
+
+</p>
+<br><br> {% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="mt-5">Revenue Prediction Using Machine Learning</h1>
+
+This API is used to re-train our model and make revenue predictions.
+<br><br><br>
+<h4>Train</h4>
+
+<div class="row">
+    <div class="column">
+        <h5>Step 1: Input</h5>
+        <img src="{{ url_for('static', filename='Train_training.png') }}" width="100%" alt="centered image">
+    </div>
+    <div class="column">
+        <h5>Step 2: Trained model</h5>
+        <img src="{{ url_for('static', filename='Train_trained.png') }}" width="100%" alt="centered image">
+    </div>
+</div>
+<br><br><br>
+
+<h4>Predict</h4>
+
+<div class="row">
+    <div class="column">
+        <h5>Step 1: Input</h5>
+        <img src="{{ url_for('static', filename='Predict_input.png') }}" width="100%" alt="centered image">
+    </div>
+    <div class="column">
+        <h5>Step 2: Prediction</h5>
+        <img src="{{ url_for('static', filename='Predict_result.png') }}" width="100%" alt="centered image">
+    </div>
+</div>
+<br><br><br>
+<h4>Logs</h4>
+<img src="{{ url_for('static', filename='Logs.png') }}" width="750" alt="">
+
+
+<br><br> You can find my portfolio <a href="https://tdody.github.io" style="color:#3385ff;">here</a>
+<br> Or visit my LinkedIn profile <a href="https://www.linkedin.com/in/thibault-dody/" style="color:#3385ff;">here</a> {% endblock %}
