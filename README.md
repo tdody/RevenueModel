@@ -1,6 +1,10 @@
 # IBM AI Enterprise Workflow Capstone
 Files for the IBM AI Enterprise Workflow Capstone project. 
 
+## Live Version
+
+A live version of the API can be found on [Heroku] {https://revenue-ml.herokuapp.com/index}
+
 ## API
   
 The API contains four tabs:
